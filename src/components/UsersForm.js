@@ -61,27 +61,29 @@ const UsersForm = ({userSelected, getUsers, setUserSelected}) => {
 
     return (
         <form onSubmit={submit}>
-            <div>
+            <h1>Lista de usuarios</h1>
+
+            <div className='formitem'>
             <label htmlFor="name">Nombre</label>
             <input type="text" id='name' value={name} onChange={e=> setName(e.target.value)} />
             </div>
                 
-            <div>
+            <div className='formitem'>
             <label htmlFor="last_name">Apellido</label>
             <input type="text" id='last_name' value={lastName} onChange={e=> setLastName(e.target.value)} />
             </div>
 
-            <div>
+            <div className='formitem'>
             <label htmlFor="email">Email</label>
             <input type="email" id='email' value={email} onChange={e=> setEmail(e.target.value)} />
             </div>
 
-            <div>
+            <div className='formitem'>
             <label htmlFor="birthday">Fecha de nacimiento</label>
             <input type="date" id='birthday' value={birthday} onChange={e=> setBirthday(e.target.value)} />
             </div>
 
-            <div>
+            <div className='formitem'>
             <label htmlFor="password">Contraseña</label>
             <input type="password" id='password' value={pass} onChange={e=> setPass(e.target.value)} />
             </div>
